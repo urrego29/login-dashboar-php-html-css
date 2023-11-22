@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Iniciar sesion para acceder a la cuenta</p>
+                    <button id="btn__iniciar-sesion">Iniciar sesion</button>
+                </div>
+            
+                <div class="caja__trasera-Registro">
+                    <h2>¿Inicia una nueva cuenta?</h2>
+                    <p>Registrate para acceder a una nueva cuenta</p>
+                    <button id="btn__registro">Registro</button>
+                </div>
+            </div>
+            <div class="contenedor__login-registro">
+
+                <form method="POST" action="login.php" class="formulario__login">
+                    <h3>Iniciar sesion</h3>
+                    <input type="text" name="correo" placeholder="correo">
+                    <input type="password" name="contrasena" placeholder="contrasena">
+                    <button type="submit">Entrar</button>
+                </form>  
+
+                <form action="insert.php" method="POST" class="formulario__registro">
+                    <h2>Nuevo Registro</h2>
+                    <input type="text" placeholder="Nombre Completo" name="nombres">
+                    <input type="text" placeholder="Correo Electronico" name="correo">
+                    <input type="text" placeholder="Usuario" name="usuario">
+                    <input type="Contraseña" placeholder="Contraseña" name="constrasena">
+                    <button>Nuevo Registro</button>
+                </form>
+            </div>
+        </div>    
+    </main>  
+    <script src="assets/js/script.js"></script>  
+</body>
+</html>
